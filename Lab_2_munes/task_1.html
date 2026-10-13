@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1 - Personal Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+        th, td {
+            border: 1px solid #333333;
+            padding: 10px 14px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #f2f2f2;
+            width: 25%;
+        }
+        .header-cell {
+            text-align: center;
+            background-color: #e6e6e6;
+            font-size: 1.1em;
+        }
+        .photo-cell {
+            text-align: center;
+            width: 30%;
+        }
+        .photo-cell img {
+            width: 140px;
+            height: auto;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Personal Profile Table</h2>
+
+    <table>
+        <!-- Header row -->
+        <tr>
+            <th colspan="3" class="header-cell">Student Biodata</th>
+        </tr>
+
+        <!-- Row 1: Photo alongside Name and Basic Info -->
+        <tr>
+            <td rowspan="4" class="photo-cell">
+                <img src="https://via.placeholder.com/140x170?text=My+Photo" alt="Profile Photo">
+            </td>
+            <th>Name</th>
+            <td>Pavinness A/L Murugaiah</td>
+        </tr>
+        <tr>
+            <th>Date of birth</th>
+            <td>13 January 2004</td>
+        </tr>
+        <tr>
+            <th>Religion</th>
+            <td>Hinduism</td>
+        </tr>
+        <tr>
+            <th>Race</th>
+            <td>Indian</td>
+        </tr>
+
+        <!-- Address Section with Rowspan -->
+        <tr>
+            <th rowspan="4">Address</th>
+            <th>Street</th>
+            <td>Jalan Universiti</td>
+        </tr>
+        <tr>
+            <th>Town</th>
+            <td>Parit Raja</td>
+        </tr>
+        <tr>
+            <th>District</th>
+            <td>Batu Pahat</td>
+        </tr>
+        <tr>
+            <th>State</th>
+            <td>Johor</td>
+        </tr>
+
+        <!-- Contact Section with Rowspan -->
+        <tr>
+            <th rowspan="3">Contact</th>
+            <th>Mobile Phone</th>
+            <td>+60 12-345 6789</td>
+        </tr>
+        <tr>
+            <th>Social Media</th>
+            <td><a href="https://linkedin.com" target="_blank">LinkedIn Profile</a></td>
+        </tr>
+        <tr>
+            <th>Website</th>
+            <td><a href="https://github.com" target="_blank">GitHub Profile</a></td>
+        </tr>
+
+        <!-- Academic and Skills -->
+        <tr>
+            <th colspan="2">Course and Institution</th>
+            <td>Bachelor of Computer Science (Web Technology), Universiti Tun Hussein Onn Malaysia (UTHM)</td>
+        </tr>
+        <tr>
+            <th colspan="2">Programming skills</th>
+            <td>
+                <ul>
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>JavaScript / TypeScript</li>
+                    <li>React</li>
+                    <li>PHP &amp; SQL</li>
+                    <li>C / C#</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">Hobbies</th>
+            <td>Coding, graphic design, mobile gaming</td>
+        </tr>
+        <tr>
+            <th colspan="2">2026 Wishlist</th>
+            <td>
+                <ol>
+                    <li>Achieve a Dean's List award in Web Development</li>
+                    <li>Build and deploy full-stack web applications</li>
+                    <li>Master modern UI/UX design frameworks</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
