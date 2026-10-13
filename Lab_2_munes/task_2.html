@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2 - Conference Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 550px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333333;
+        }
+        .form-group {
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #444444;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        .options-group {
+            margin-top: 5px;
+        }
+        .options-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 25px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 24px;
+            font-size: 15px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin: 0 8px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: #ffffff;
+        }
+        input[type="reset"]:hover {
+            background-color: #545b62;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Conference Registration Form</h2>
+
+        <form action="#" method="post">
+            
+            <!-- Full Name (Required) -->
+            <div class="form-group">
+                <label for="fullname">Full Name: *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </div>
+
+            <!-- Email Address (Required) -->
+            <div class="form-group">
+                <label for="email">Email Address: *</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <!-- Age (Required, min 18, max 99) -->
+            <div class="form-group">
+                <label for="age">Age: *</label>
+                <input type="number" id="age" name="age" min="18" max="99" value="18" required>
+            </div>
+
+            <!-- Gender (Radio) -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <div class="options-group">
+                    <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                    <label><input type="radio" name="gender" value="Female"> Female</label>
+                </div>
+            </div>
+
+            <!-- Country of Residence (Select Dropdown) -->
+            <div class="form-group">
+                <label for="country">Country of Residence:</label>
+                <select id="country" name="country">
+                    <option value="Malaysia" selected>Malaysia</option>
+                    <option value="Singapore">Singapore</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Areas of Interest (Checkboxes) -->
+            <div class="form-group">
+                <label>Areas of Interest:</label>
+                <div class="options-group">
+                    <label><input type="checkbox" name="interest" value="Software Development"> Software Development</label><br>
+                    <label><input type="checkbox" name="interest" value="Data Science"> Data Science</label><br>
+                    <label><input type="checkbox" name="interest" value="Cybersecurity"> Cybersecurity</label><br>
+                    <label><input type="checkbox" name="interest" value="Artificial Intelligence"> Artificial Intelligence</label>
+                </div>
+            </div>
+
+            <!-- Experience Level (Radio) -->
+            <div class="form-group">
+                <label>Experience Level:</label>
+                <div class="options-group">
+                    <label><input type="radio" name="experience" value="Beginner" checked> Beginner</label>
+                    <label><input type="radio" name="experience" value="Intermediate"> Intermediate</label>
+                    <label><input type="radio" name="experience" value="Advanced"> Advanced</label>
+                </div>
+            </div>
+
+            <!-- Comments or Questions -->
+            <div class="form-group">
+                <label for="comments">Comments or Questions:</label>
+                <textarea id="comments" name="comments" placeholder="Any comments or questions?"></textarea>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="button-group">
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
